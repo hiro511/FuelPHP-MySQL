@@ -3,8 +3,8 @@
 #### Setup
 
 ```bash
-git clone https://hiro511/fuel+mysql.git
-cd fuel+mysql
+git clone https://github.com/hiro511/FuelPHP-MySQL.git
+cd FuelPHP-MySQL
 docker-compose up
 ```
 
