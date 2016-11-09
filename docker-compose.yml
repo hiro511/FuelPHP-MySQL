@@ -1,0 +1,15 @@
+mysql:
+  image: "mysql"
+  container_name: "mysql"
+  environment:
+   - MYSQL_ROOT_PASSWORD=password
+   - MYSQL_DATABASE=fuel_db
+fuelphp:
+  image: hiro511/fuelphp
+  container_name: "fuel"
+  ports:
+   - "80:80"
+  volumes:
+   - "$PWD/src:/var/www/html/fuel/fuel/app"
+  links:
+   - "mysql"
