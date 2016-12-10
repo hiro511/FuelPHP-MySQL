@@ -6,8 +6,7 @@ return array(
     array(
       'default' => 
       array(
-        0 => '001_example',
-        1 => '002_create_articles',
+        0 => '001_example'
       ),
     ),
     'module' => 

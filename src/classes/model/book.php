@@ -1,12 +1,12 @@
 <?php
 
-class Model_Article extends \Orm\Model
+class Model_Book extends \Orm\Model
 {
 	protected static $_properties = array(
 		'id',
 		'title',
-		'body',
-		'user_id',
+		'author',
+		'year',
 		'created_at',
 		'updated_at',
 	);
@@ -22,10 +22,10 @@ class Model_Article extends \Orm\Model
 		),
 	);
 
-	protected static $_table_name = 'articles';
-
+	protected static $_table_name = 'books';
+	
 	protected static $_to_array_exclude = array(
-  	'created_at', 'updated_at'	// 出力からこれらのカラムを除外します
+  		'created_at', 'updated_at'	// 出力からこれらのカラムを除外します
   	);
 
 }

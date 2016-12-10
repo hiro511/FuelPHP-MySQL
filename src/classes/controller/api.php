@@ -11,4 +11,11 @@ class Controller_Api extends Controller_Rest
           'empty' => null
       ));
     }
+    
+    public function get_test()
+    {
+	    return $this->response(array(
+	    	true
+	    ));
+    }
 }

@@ -10,5 +10,11 @@ return array(
 			'username'   => 'root',
 			'password'   => 'password',
 		),
+		'identifier'     => '`',
+		'table_prefix'   => '',
+		'charset'        => 'utf8',
+		'enable_cache'   => true,
+		'profiling'      => false,
+		'readonly'  	 => false,
 	),
 );
